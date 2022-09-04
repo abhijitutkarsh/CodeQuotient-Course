@@ -52,3 +52,9 @@ int searchRotatedSortedArray(int arr[], int n, int k) {
 //time Complexity logn
 // Optimized
 
+ 
+  for(int i = 0 ; i<arr.size(); i++)
+  {
+    ans = min(ans, arr[j] - arr[i]);
+  }
+  return ans;
